@@ -13,7 +13,7 @@
                url + 'scripts/shBrushJScript.js',
                url + 'styles/shCore.css',
                url + 'scripts/shBrushXml.js',
-               'https://raw.github.com/andrashatvani/shBrushObjC/master/shBrushObjC.js',
+               'https://raw.github.com/scottdensmore/ObjectiveCSyntaxHighlighter/master/scripts/shBrushObjC.js',
                url + 'styles/shCoreDefault.css'];
       
         len = arr.length;
