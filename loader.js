@@ -47,7 +47,6 @@
       
         callBack = function () {
             if (++counter === len) {
-debugger;
                 SyntaxHighlighter.highlight();
             } else {
                 load(arr[counter], callBack);
