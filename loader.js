@@ -5,7 +5,7 @@ debugger;
         doc = document,
         len, load, callBack, url = 'http://alexgorbatchev.com/pub/sh/current/';
   
-    if (window.SyntaxHighlighter) {
+    if (window.SyntaxHighlighter && !window.SyntaxHighlighterLoading) {
         SyntaxHighlighter.highlight();
     } else if (!window.SyntaxHighlighterLoading) {
         window.SyntaxHighlighterLoading = true;
@@ -49,6 +49,7 @@ debugger;
         callBack = function () {
             if (++counter === len) {
                 SyntaxHighlighter.highlight();
+                window.SyntaxHighlighterLoading = false;
             } else {
                 load(arr[counter], callBack);
             }
