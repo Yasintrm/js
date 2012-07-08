@@ -1,5 +1,6 @@
 
 (function () {
+debugger;
     var arr, counter = 0,
         doc = document,
         len, load, callBack, url = 'http://alexgorbatchev.com/pub/sh/current/';
